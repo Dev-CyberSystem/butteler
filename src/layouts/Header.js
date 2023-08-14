@@ -148,10 +148,16 @@ const Header = () => {
                     <li>
                       <Link href="blog-single">Blog Single</Link>
                     </li>
+                    <li>
+                      <Link href="tienda">Tienda</Link>
+                    </li>
                   </ul>
                 </li>
                 <li>
                   <Link href="contacts">Contacto</Link>
+                </li>
+                <li>
+                  <Link href="administracion">Administración</Link>
                 </li>
               </ul>
             </div>
@@ -252,6 +258,9 @@ const Header = () => {
                 </li>
                 <li>
                   <Link href="blog-single">Blog Single</Link>
+                </li>
+                <li>
+                  <Link href="tienda">Tienda</Link>
                 </li>
               </ul>
             </li>
