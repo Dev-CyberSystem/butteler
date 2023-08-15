@@ -1,39 +1,33 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { Table, Button, Modal} from "react-bootstrap";
 import axios from "axios";
 import FormUpdateProductos from "./FormUpdateProductos";
+import { ProductosContext } from "../context/contexProductos";
+
 
 const TableProductos = () => {
-  const [productos, setProductos] = useState([]);
+  // const [productos, setProductos] = useState([]);
   const [show, setShow] = useState(false);
     const [editProduct, setEditProduct] = useState(null);
 
+    const { productos, deleteProducts } = useContext(ProductosContext);
 
-  const getProducts = async () => {
-    try {
-      const response = await axios.get("http://localhost:8080/api/productos");
 
-      setProductos(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const getProducts = async () => {
+  //   try {
+  //     const response = await axios.get("http://localhost:8080/api/productos");
 
-  const deleteProducts = async (_id) => {
-    try {
-      const response = await axios.delete(
-        `http://localhost:8080/api/productos/eliminar/${_id}`
-      );
-      console.log(response);
-      getProducts();
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  //     setProductos(response.data);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
-  useEffect(() => {
-    getProducts();
-  }, []);
+
+
+  // useEffect(() => {
+  //   getProducts();
+  // }, []);
 
     
     const handleClose = () => setShow(false);
@@ -100,7 +94,7 @@ const TableProductos = () => {
                     <Modal.Title>Editar Producto</Modal.Title>
                 </Modal.Header>
                 <Modal.Body style={{backgroundColor: "black"}}>
-                    <FormUpdateProductos editProduct={editProduct} getProducts={getProducts} setShow={setShow} />
+                    <FormUpdateProductos editProduct={editProduct}  setShow={setShow} />
                 </Modal.Body>
             </Modal>
 

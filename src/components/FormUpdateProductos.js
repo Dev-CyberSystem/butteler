@@ -1,24 +1,14 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Swal from "sweetalert2";
-import axios from "axios";
+import { ProductosContext } from "../context/contexProductos";
 
-const FormUpdateProductos = ({ editProduct, getProducts, setShow }) => {
+
+const FormUpdateProductos = ({ editProduct, setShow }) => {
     console.log(editProduct, "producto de form update")
   const [producto, setProducto] = useState(editProduct);
 
-  const updateProducts = async (producto) => {
-    console.log(producto, "producto de context");
-    try {
-      await axios.put(
-        `http://localhost:8080/api/productos/actualizar/${producto._id}`,
-        producto
-      );
-      await getProducts();
-    } catch (error) {
-      console.log(error, "error de productos");
-    }
-  };
+  const { updateProducts } = useContext(ProductosContext);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

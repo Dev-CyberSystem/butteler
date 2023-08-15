@@ -1,3 +1,4 @@
+"use client"
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
@@ -23,10 +24,10 @@ const ProductsContext = ({ children }) => {
   const addProducts = async (productos) => {
     try {
       const response = await axios.post(
-        "http://localhost:8001/api/canchas",
+        "http://localhost:8080/api/productos/crear",
         productos
       );
-      console.log(response, "response de productos");
+      getProducts();
     } catch (error) {
       console.log(error, "error de productos");
     }
@@ -38,10 +39,9 @@ const ProductsContext = ({ children }) => {
     console.log(producto, "producto de context");
     try {
       await axios.put(
-        `http://localhost:8001/api/canchas/${producto._id}`,
+        `http://localhost:8080/api/productos/actualizar/${producto._id}`,
         producto
       );
-
       await getProducts();
     } catch (error) {
       console.log(error, "error de productos");
@@ -51,13 +51,14 @@ const ProductsContext = ({ children }) => {
   //Petición a la API Http DELETE  ----> Elimina info
 
   const deleteProducts = async (_id) => {
-    console.log(_id, "id de context");
     try {
-      await axios.delete(`http://localhost:8001/api/canchas/${_id}`);
-      const deleteProducto = productos.filter((producto) => producto._id !== _id);
-      setProductos(deleteProducto);
+      const response = await axios.delete(
+        `http://localhost:8080/api/productos/eliminar/${_id}`
+      );
+      console.log(response);
+      getProducts();
     } catch (error) {
-      console.log(error, "error de productos");
+      console.log(error);
     }
   };
 
