@@ -20,7 +20,7 @@ const Footer = () => {
               className="kf-f-hours element-anim-1 scroll-animate"
               data-animate="active"
             >
-              <h5>Working Hours</h5>
+              {/* <h5>Working Hours</h5>
               <ul>
                 <li>
                   Sunday - Thursday
@@ -33,7 +33,7 @@ const Footer = () => {
                 <li>
                   <strong>Saturday Close</strong>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
           <div className="col-xs-12 col-sm-12 col-md-6 col-lg-3">
@@ -42,29 +42,29 @@ const Footer = () => {
               className="kf-f-contact element-anim-1 scroll-animate"
               data-animate="active"
             >
-              <h5>Contact Us</h5>
+              <h5>Contacto</h5>
               <ul>
                 <li>
                   <i className="las la-map-marker" />
-                  <em>Location :</em>
-                  55 Main Street, New York
+                  <em>Direccion :</em>
+                  Marcos Paz 336, San Miguel de Tucumán
                 </li>
                 <li>
                   <i className="las la-envelope-open-text" />
-                  <em>Email Address :</em>
-                  kaffendev@gmail.com
+                  <em>Email:</em>
+                  butteler.cafe@gmail.com
                 </li>
                 <li>
                   <i className="las la-phone" />
-                  <em>Phone Number :</em>
-                  +012 (345) 678 99
+                  <em>Telefono</em>
+                  3814173527
                 </li>
               </ul>
             </div>
           </div>
           <div className="col-xs-12 col-sm-12 col-md-6 col-lg-3">
             {/* gallery */}
-            <div
+            {/* <div
               className="kf-f-gallery element-anim-1 scroll-animate"
               data-animate="active"
             >
@@ -119,7 +119,7 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="row">
@@ -129,7 +129,7 @@ const Footer = () => {
               className="kf-copyright element-anim-1 scroll-animate"
               data-animate="active"
             >
-              Copyright © 2022 Kaffen. All Rights Reserved.
+              Copyright © 2023 DevSystem. All Rights Reserved.
             </div>
           </div>
         </div>

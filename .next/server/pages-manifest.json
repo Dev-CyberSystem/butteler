@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/administracion": "pages/administracion.js",
-  "/gallery": "pages/gallery.js",
-  "/tienda": "pages/tienda.js"
+  "/tienda": "pages/tienda.js",
+  "/administracion": "pages/administracion.js"
 }

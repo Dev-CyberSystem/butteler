@@ -30,11 +30,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/administracion.js"
     ],
-    "/gallery": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/gallery.js"
-    ],
     "/tienda": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

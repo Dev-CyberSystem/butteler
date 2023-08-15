@@ -29,15 +29,15 @@ const Header = () => {
       {/* <div className="kf-topline">
         <div className="row">
           <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4"> */}
-            {/* hours */}
-            {/* <div className="kf-h-group">
+      {/* hours */}
+      {/* <div className="kf-h-group">
               <i className="far fa-clock" /> <em>opening hours :</em> 08:00 am -
               09:00 pm
             </div>
           </div>
           <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 align-center"> */}
-            {/* social */}
-            {/* <div className="kf-h-social">
+      {/* social */}
+      {/* <div className="kf-h-social">
               <a href="facebook.com" target="blank">
                 <i className="fab fa-facebook-f" />
               </a>
@@ -53,8 +53,8 @@ const Header = () => {
             </div>
           </div>
           <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 align-right"> */}
-            {/* location */}
-            {/* <div className="kf-h-group">
+      {/* location */}
+      {/* <div className="kf-h-group">
               <i className="fas fa-map-marker-alt" /> <em>Location :</em> 55
               main street, new york
             </div>
@@ -148,10 +148,10 @@ const Header = () => {
                     <li>
                       <Link href="blog-single">Blog Single</Link>
                     </li>
-                    <li>
-                      <Link href="tienda">Tienda</Link>
-                    </li>
                   </ul>
+                </li>
+                <li>
+                  <Link href="tienda">Tienda</Link>
                 </li>
                 <li>
                   <Link href="contacts">Contacto</Link>
