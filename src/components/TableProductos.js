@@ -1,36 +1,15 @@
-import { useEffect, useState, useContext } from "react";
-import { Table, Button, Modal} from "react-bootstrap";
-import axios from "axios";
+import {  useState, useContext } from "react";
+import { Table, Button, Modal } from "react-bootstrap";
 import FormUpdateProductos from "./FormUpdateProductos";
 import { ProductosContext } from "../context/contexProductos";
 
-
 const TableProductos = () => {
-  // const [productos, setProductos] = useState([]);
   const [show, setShow] = useState(false);
-    const [editProduct, setEditProduct] = useState(null);
+  const [editProduct, setEditProduct] = useState(null);
 
-    const { productos, deleteProducts } = useContext(ProductosContext);
+  const { productos, deleteProducts } = useContext(ProductosContext);
 
-
-  // const getProducts = async () => {
-  //   try {
-  //     const response = await axios.get("http://localhost:8080/api/productos");
-
-  //     setProductos(response.data);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-
-
-
-  // useEffect(() => {
-  //   getProducts();
-  // }, []);
-
-    
-    const handleClose = () => setShow(false);
+  const handleClose = () => setShow(false);
 
   const handleDelete = (_id) => {
     console.log(_id);
@@ -52,7 +31,7 @@ const TableProductos = () => {
         <>
           <Table responsive>
             <thead>
-              <tr style={{color: "white"}}>
+              <tr style={{ color: "white" }}>
                 <th>Nombre</th>
                 <th>Precio</th>
                 <th>Descripción</th>
@@ -63,7 +42,7 @@ const TableProductos = () => {
             </thead>
             {productos.map((producto) => (
               <tbody key={producto._id}>
-                <tr style={{color: "white"}}>
+                <tr style={{ color: "white" }}>
                   <td>{producto.nombre}</td>
                   <td>{producto.precio}</td>
                   <td>{producto.descripcion}</td>
@@ -89,15 +68,17 @@ const TableProductos = () => {
               </tbody>
             ))}
           </Table>
-            <Modal show={show} onHide={handleClose}>
-                <Modal.Header style={{backgroundColor: "black"}}closeButton>  
-                    <Modal.Title>Editar Producto</Modal.Title>
-                </Modal.Header>
-                <Modal.Body style={{backgroundColor: "black"}}>
-                    <FormUpdateProductos editProduct={editProduct}  setShow={setShow} />
-                </Modal.Body>
-            </Modal>
-
+          <Modal show={show} onHide={handleClose}>
+            <Modal.Header style={{ backgroundColor: "black" }} closeButton>
+              <Modal.Title>Editar Producto</Modal.Title>
+            </Modal.Header>
+            <Modal.Body style={{ backgroundColor: "black" }}>
+              <FormUpdateProductos
+                editProduct={editProduct}
+                setShow={setShow}
+              />
+            </Modal.Body>
+          </Modal>
         </>
       )}
     </>

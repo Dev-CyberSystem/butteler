@@ -3,7 +3,8 @@ import ImageView from "../components/ImageView";
 import { scrollAnimation } from "../utils";
 import Footer from "./Footer";
 import Header from "./Header";
-import ProductsContext  from "../context/contexProductos";
+import ProductsContext from "../context/contexProductos";
+import ContextUsers from "../context/contextUsers";
 const Layouts = ({ children }) => {
   useEffect(() => {
     scrollAnimation();
@@ -26,14 +27,16 @@ const Layouts = ({ children }) => {
 
   return (
     <Fragment>
+      <ContextUsers>
       <ImageView />
       <div className="bg">
-        <Header />
-        <ProductsContext>
-        <div className="wrapper">{children}</div>
-        </ProductsContext>
+          <ProductsContext>
+          <Header />
+            <div className="wrapper">{children}</div>
+          </ProductsContext>
         <Footer />
       </div>
+        </ContextUsers>
     </Fragment>
   );
 };

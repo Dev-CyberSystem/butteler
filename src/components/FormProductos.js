@@ -1,7 +1,7 @@
+import { useState, useContext} from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { useState} from "react";
 import Swal from "sweetalert2";
-import axios from "axios";
+import { ProductosContext } from "../context/contexProductos";
 
 const FormProductos = () => {
   const [productos, setProductos] = useState({
@@ -13,16 +13,9 @@ const FormProductos = () => {
     imagen: "",
   });
 
-  const addProducts = async (productos) => {
-    try {
-      const response = await axios.post(
-        "http://localhost:8080/api/productos/crear",
-        productos
-      );
-    } catch (error) {
-      console.log(error, "error de productos");
-    }
-  };
+  const { addProducts } = useContext(ProductosContext);
+
+
 
   const handleChange = (e) => {
     setProductos({ ...productos, [e.target.name]: e.target.value }); // ...productos es para que no se borre lo que ya tenia

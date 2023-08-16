@@ -1,11 +1,22 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { Button, Modal } from "react-bootstrap";
 import { stickyNav } from "../utils";
+import Login from "../components/Login";
+import { UsuariosContext } from "../context/contextUsers";
 
 const Header = () => {
+  const [show, setShow] = useState(false);
   useEffect(() => {
     stickyNav();
   }, []);
+
+  const { userLogueado, logout } = useContext(UsuariosContext);
+
+  console.log(userLogueado)
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const [toggle, setToggle] = useState(false);
 
@@ -156,9 +167,24 @@ const Header = () => {
                 <li>
                   <Link href="contacts">Contacto</Link>
                 </li>
-                <li>
-                  <Link href="administracion">Administración</Link>
-                </li>
+                {userLogueado.rol === "admin" ? (
+                  <li>
+                    <Link href="administracion">Administración</Link>
+                  </li>
+                ) : null}
+                {/* <li>
+                  <Link href="registro">Registro</Link>
+                </li> */}
+
+                {userLogueado ? (
+                  <Button variant="outline-success" onClick={logout} >
+                  Cerrar Sesion
+                </Button>
+                ) : (
+                  <Button variant="outline-success" onClick={handleShow}>
+                    Login
+                  </Button>
+                )}
               </ul>
             </div>
           </div>
@@ -313,6 +339,20 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header style={{ backgroundColor: "black" }} closeButton>
+          <Modal.Title>Login</Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{ backgroundColor: "black" }}>
+          <Login />
+        </Modal.Body>
+        <Modal.Footer style={{ backgroundColor: "black" }}>
+          <ul>
+            Aun no tenes una cuenta? Registrate aquí{" "}
+            <Link href="registro">Registro</Link>
+          </ul>
+        </Modal.Footer>
+      </Modal>
     </header>
   );
 };

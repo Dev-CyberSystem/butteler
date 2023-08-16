@@ -12,7 +12,7 @@ const ProductsContext = ({ children }) => {
   const getProducts = async () => {
     try {
       const response = await axios.get("http://localhost:8080/api/productos");
-      console.log(response.data, "response de Canchas")
+      console.log(response.data, "response productos")
       setProductos(response.data);
     } catch (error) {
       console.log(error, "error de productos");
