@@ -13,7 +13,11 @@ const Header = () => {
 
   const { userLogueado, logout } = useContext(UsuariosContext);
 
-  console.log(userLogueado)
+  console.log(userLogueado, "userLogueado");
+
+  // const user = localStorage.getItem("user");
+
+  // console.log(user , "user")
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -167,7 +171,7 @@ const Header = () => {
                 <li>
                   <Link href="contacts">Contacto</Link>
                 </li>
-                {userLogueado.rol === "admin" ? (
+                {userLogueado && userLogueado.rol === "admin" ? (
                   <li>
                     <Link href="administracion">Administración</Link>
                   </li>
@@ -177,12 +181,12 @@ const Header = () => {
                 </li> */}
 
                 {userLogueado ? (
-                  <Button variant="outline-success" onClick={logout} >
-                  Cerrar Sesion
-                </Button>
+                  <Button variant="outline-success" onClick={logout}>
+                    Cerrar Sesión
+                  </Button>
                 ) : (
                   <Button variant="outline-success" onClick={handleShow}>
-                    Login
+                    Iniciar Sesión
                   </Button>
                 )}
               </ul>
