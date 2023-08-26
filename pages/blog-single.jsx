@@ -8,25 +8,19 @@ const BlogSingle = () => {
       <section className="section kf-archive-started">
         <div className="container">
           <div className="kf-titles">
-            <div
-              className="kf-date element-anim-1 scroll-animate"
-              data-animate="active"
-            >
-              25 Sep 2021 - <Link href="blog">Recipes</Link>
-            </div>
             <h1
               className="kf-p-title text-anim-1 scroll-animate"
               data-splitting="words"
               data-animate="active"
             >
-              Coffee with added milk provides all the macro nutrients
+              Brazil Moka
             </h1>
           </div>
         </div>
         <div
           className="kf-archive-image element-anim-1 scroll-animate"
           data-animate="active"
-          style={{ backgroundImage: "url(images/latest_blog3.jpg)" }}
+          style={{ backgroundImage: "url(images/mokaLarge.png)" }}
         />
       </section>
       {/* Section Archive */}
@@ -38,35 +32,30 @@ const BlogSingle = () => {
                 className="post-content element-anim-1 scroll-animate"
                 data-animate="active"
               >
-                <p>
-                  Vivamus interdum suscipit lacus. Nunc ultrices accumsan
-                  mattis. Aliquam vel sem vel velit efficitur malesuada. Donec
-                  arcu lacus, ornare eget ligula vel, commodo luctus felis. Ut
-                  dignissim sapien sit amet molestie rutrum. Orci varius natoque
-                  penatibus et magnis dis parturient montes, nascetur ridiculus
-                  mus. Pellentesque in porta dolor, a suscipit risus. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Cras ac
-                  arcu in lorem rhoncus ullamcorper. Ut at nulla ut libero
-                  mollis viverra sed vitae purus.
-                </p>
                 <blockquote>
                   <p>
-                    Photography is the story I fail to put into words get ligula
-                    vel, commodo luctus felis. Ut dignissim sapien sit amet
-                    molestie rutr
+                    Esta variedad se destaca por su marcada buena acidez y
+                    cremosidad. Además, predomina el sabor cítrico con aroma
+                    floral.
                   </p>
-                  <cite>Destin Sparks</cite>
                 </blockquote>
-                <p>
-                  Nam dui mauris, congue vel nisi in, tempus gravida enim. Nulla
-                  et tristique orci. Pellentesque lectus sapien, maximus id
-                  gravida sit amet, tristique non eros. Etiam aliquet, sem vitae
-                  sagittis convallis, ante sapien tincidunt nisl, eget dapibus
-                  tortor velit quis ex. Proin et condimentum est, sed pretium
-                  ex. Mauris posuere est metus, vitae commodo sem posuere eget.
-                  Praesent maximus augue rutrum, consequat magna id, facilisis
-                  lorem. Quisque molestie, turpis ac interdum gravida
-                </p>
+                <ul>
+                  <li>NOMBRE TÉCNICO: Moka</li>
+                  <li>
+                    DESCRIPCIÓN: Variedad que se destaca por su buena acidez y
+                    cremosidad.{" "}
+                  </li>
+                  <li>COSECHA: 2021</li>
+                  <li>REGIÓN: Cerrado Minerio, Minas Gerais</li>
+                  <li>VARIETAL: Arábiga</li>
+                  <li>BENEFICIO: Natural</li>
+                  <li>ALTURA: 900 mts</li>
+                  <li>PUNTUACIÓN: 83 puntos</li>
+                  <li>
+                    NOTAS DE CATA: Aroma floral. Cítrico con buen dulzor y buena
+                    acidez.{" "}
+                  </li>
+                </ul>
                 <p>
                   <br />
                 </p>
@@ -85,18 +74,7 @@ const BlogSingle = () => {
                   arcu in lorem rhoncus ullamcorper. Ut at nulla ut libero
                   mollis viverra sed vitae purus.
                 </p>
-                <ul>
-                  <li>
-                    Donec arcu lacus, ornare eget ligula vel, commodo luctus
-                    felis.
-                  </li>
-                  <li>Ut dignissim sapien sit amet molestie rutrum.</li>
-                  <li>
-                    Orci varius natoque penatibus et magnis dis parturient
-                    montes.
-                  </li>
-                  <li>Ut at nulla ut libero mollis viverra sed vitae purus.</li>
-                </ul>
+
                 <p>
                   Nam dui mauris, congue vel nisi in, tempus gravida enim. Nulla
                   et tristique orci. Pellentesque lectus sapien, maximus id
@@ -105,7 +83,7 @@ const BlogSingle = () => {
                   tortor velit quis ex.
                 </p>
               </div>
-              <div
+              {/* <div
                 className="post-details element-anim-1 scroll-animate"
                 data-animate="active"
               >
@@ -115,13 +93,13 @@ const BlogSingle = () => {
                   <Link href="blog">fashion</Link>
                   <Link href="blog">creative</Link>
                 </span>
-              </div>
+              </div> */}
               {/* Comments */}
-              <div
+              {/* <div
                 className="comments-post element-anim-1 scroll-animate"
                 data-animate="active"
               >
-                {/* Comments */}
+               
                 <div className="section__comments">
                   <h4
                     className="element-anim-1 scroll-animate"
@@ -240,7 +218,7 @@ const BlogSingle = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -248,35 +226,20 @@ const BlogSingle = () => {
       {/* Section CTA */}
       <section
         className="section kf-cta kf-parallax"
-        style={{ backgroundImage: "url(images/cta_bg.jpg)" }}
+        style={{ backgroundImage: "url(images/2.png)" }}
       >
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8">
               <div className="kf-titles">
-                <div
-                  className="kf-subtitle element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
-                  Need a Table On Coffee House
-                </div>
                 <h3
                   className="kf-title element-anim-1 scroll-animate"
                   data-animate="active"
                 >
-                  Booking Table For Your &amp; Family Members
+                  El café huele a cielo recién molido. <br />
+                  Jessi Lane Adams
                 </h3>
               </div>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 align-self-center align-right">
-              <Link
-                href="reservation"
-                className="kf-btn element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <span>booking table</span>
-                <i className="fas fa-chevron-right" />
-              </Link>
             </div>
           </div>
         </div>
@@ -284,7 +247,7 @@ const BlogSingle = () => {
       {/* Section Brands */}
       <div className="section kf-brands">
         <div className="container">
-          <div className="kf-brands-items row">
+          {/* <div className="kf-brands-items row">
             <div className="col-xs-12 col-sm-12 col-md-4 col-lg-2">
               <div
                 className="kf-brands-item element-anim-1 scroll-animate"
@@ -345,7 +308,7 @@ const BlogSingle = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </Layouts>

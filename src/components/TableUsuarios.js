@@ -8,11 +8,9 @@ const TableUsuarios = () => {
 
   const { usuarios, deleteUser } = useContext(UsuariosContext);
 
-  console.log(usuarios, "usuarios de table usuarios");
   const handleClose = () => setShow(false);
 
   const handleDelete = (_id) => {
-    console.log(_id);
     deleteUser(_id);
   };
 

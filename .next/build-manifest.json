@@ -30,10 +30,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/administracion": [
+    "/blog-grid": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/administracion.js"
+      "static/chunks/pages/blog-grid.js"
+    ],
+    "/contacts": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/contacts.js"
+    ],
+    "/tienda": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/tienda.js"
     ]
   },
   "ampFirstPages": []

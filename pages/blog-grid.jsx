@@ -16,7 +16,7 @@ const BlogGrid = () => {
             data-splitting="chars"
             data-animate="active"
           >
-            Blog Grid
+            Productos
           </h1>
         </div>
       </section>
@@ -28,13 +28,13 @@ const BlogGrid = () => {
               className="kf-subtitle element-anim-1 scroll-animate"
               data-animate="active"
             >
-              Get Every Single Update
+              Coffee lovers
             </div>
             <h3
               className="kf-title element-anim-1 scroll-animate"
               data-animate="active"
             >
-              Read Some Latest Blog &amp; News
+              Conocé todos los productos que tenemos para vos!
             </h3>
           </div>
           <div className="kf-blog-grid-items row">
@@ -45,22 +45,19 @@ const BlogGrid = () => {
               >
                 <div className="image kf-image-hover">
                   <Link href="blog-single">
-                    <img src="images/latest_blog1.jpg" alt="image" />
+                    <img src="images/brazilMoka.png" alt="image" />
                   </Link>
                 </div>
                 <div className="desc">
-                  <h5 className="name">
-                    Coffee makes you poop during the day because it affects your
-                    digestive
-                  </h5>
-                  <div className="kf-date">
+                  <h5 className="name">Brazil Moka</h5>
+                  {/* <div className="kf-date">
                     <i className="far fa-calendar-alt" />
                     25 Sep 2021
                   </div>
                   <div className="kf-comm">
                     <i className="far fa-comments" />
                     Comments (7)
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -70,23 +67,12 @@ const BlogGrid = () => {
                 data-animate="active"
               >
                 <div className="image kf-image-hover">
-                  <Link href="blog-single">
-                    <img src="images/latest_blog2.jpg" alt="image" />
+                  <Link href="blog2">
+                    <img src="images/ilado.png" alt="image" />
                   </Link>
                 </div>
                 <div className="desc">
-                  <h5 className="name">
-                    Coffee with added milk provides all the macro nutrients in
-                    good amounts
-                  </h5>
-                  <div className="kf-date">
-                    <i className="far fa-calendar-alt" />
-                    25 Sep 2021
-                  </div>
-                  <div className="kf-comm">
-                    <i className="far fa-comments" />
-                    Comments (7)
-                  </div>
+                  <h5 className="name">Brazil Ilado</h5>
                 </div>
               </div>
             </div>
@@ -96,23 +82,12 @@ const BlogGrid = () => {
                 data-animate="active"
               >
                 <div className="image kf-image-hover">
-                  <Link href="blog-single">
-                    <img src="images/latest_blog3.jpg" alt="image" />
+                  <Link href="blog-product3">
+                    <img src="images/pedraAzul.png" alt="image" />
                   </Link>
                 </div>
                 <div className="desc">
-                  <h5 className="name">
-                    For most people, moderate coffee consumption can be
-                    incorporated
-                  </h5>
-                  <div className="kf-date">
-                    <i className="far fa-calendar-alt" />
-                    25 Sep 2021
-                  </div>
-                  <div className="kf-comm">
-                    <i className="far fa-comments" />
-                    Comments (7)
-                  </div>
+                  <h5 className="name">Brazil Pedra Azul</h5>
                 </div>
               </div>
             </div>
@@ -122,23 +97,12 @@ const BlogGrid = () => {
                 data-animate="active"
               >
                 <div className="image kf-image-hover">
-                  <Link href="blog-single">
-                    <img src="images/history1.jpg" alt="image" />
+                  <Link href="blog-product4">
+                    <img src="images/santosCerrado.png" alt="image" />
                   </Link>
                 </div>
                 <div className="desc">
-                  <h5 className="name">
-                    Coffee makes you poop during the day because it affects your
-                    digestive
-                  </h5>
-                  <div className="kf-date">
-                    <i className="far fa-calendar-alt" />
-                    25 Sep 2021
-                  </div>
-                  <div className="kf-comm">
-                    <i className="far fa-comments" />
-                    Comments (7)
-                  </div>
+                  <h5 className="name">Brazil Santos Cerrado</h5>
                 </div>
               </div>
             </div>
@@ -148,23 +112,14 @@ const BlogGrid = () => {
                 data-animate="active"
               >
                 <div className="image kf-image-hover">
-                  <Link href="blog-single">
-                    <img src="images/history2.jpg" alt="image" />
+                  <Link href="blog-product5">
+                    <img src="images/blendGoat.png" alt="image" />
                   </Link>
                 </div>
                 <div className="desc">
                   <h5 className="name">
-                    Coffee with added milk provides all the macro nutrients in
-                    good amounts
+                    BLEND GOAT -Espíritu Santo y Minas Gerais
                   </h5>
-                  <div className="kf-date">
-                    <i className="far fa-calendar-alt" />
-                    25 Sep 2021
-                  </div>
-                  <div className="kf-comm">
-                    <i className="far fa-comments" />
-                    Comments (7)
-                  </div>
                 </div>
               </div>
             </div>
@@ -174,28 +129,17 @@ const BlogGrid = () => {
                 data-animate="active"
               >
                 <div className="image kf-image-hover">
-                  <Link href="blog-single">
-                    <img src="images/history3.jpg" alt="image" />
+                  <Link href="blog-product6">
+                    <img src="images/timanaHuila.png" alt="image" />
                   </Link>
                 </div>
                 <div className="desc">
-                  <h5 className="name">
-                    For most people, moderate coffee consumption can be
-                    incorporated
-                  </h5>
-                  <div className="kf-date">
-                    <i className="far fa-calendar-alt" />
-                    25 Sep 2021
-                  </div>
-                  <div className="kf-comm">
-                    <i className="far fa-comments" />
-                    Comments (7)
-                  </div>
+                  <h5 className="name">Colombia Timaná Huila</h5>
                 </div>
               </div>
             </div>
           </div>
-          <div className="align-center">
+          {/* <div className="align-center">
             <a
               href="#"
               className="kf-btn element-anim-1 scroll-animate"
@@ -204,33 +148,29 @@ const BlogGrid = () => {
               <span>load more</span>
               <i className="fas fa-chevron-right" />
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
       {/* Section CTA */}
       <section
         className="section kf-cta kf-parallax"
-        style={{ backgroundImage: "url(images/cta_bg.jpg)" }}
+        style={{ backgroundImage: "url(images/1.png)" }}
       >
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8">
               <div className="kf-titles">
-                <div
-                  className="kf-subtitle element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
-                  Need a Table On Coffee House
-                </div>
                 <h3
                   className="kf-title element-anim-1 scroll-animate"
                   data-animate="active"
                 >
-                  Booking Table For Your &amp; Family Members
+                  Detrás de cada mujer de éxito hay una cantidad sustancial de
+                  café.
+                  <br /> Stephanie Piro
                 </h3>
               </div>
             </div>
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 align-self-center align-right">
+            {/* <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 align-self-center align-right">
               <Link
                 href="reservation"
                 className="kf-btn element-anim-1 scroll-animate"
@@ -239,14 +179,14 @@ const BlogGrid = () => {
                 <span>booking table</span>
                 <i className="fas fa-chevron-right" />
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
       {/* Section Brands */}
       <div className="section kf-brands">
         <div className="container">
-          <div className="kf-brands-items row">
+          {/* <div className="kf-brands-items row">
             <div className="col-xs-12 col-sm-12 col-md-4 col-lg-2">
               <div
                 className="kf-brands-item element-anim-1 scroll-animate"
@@ -307,7 +247,7 @@ const BlogGrid = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </Layouts>

@@ -13,12 +13,6 @@ const Header = () => {
 
   const { userLogueado, logout } = useContext(UsuariosContext);
 
-  console.log(userLogueado, "userLogueado");
-
-  // const user = localStorage.getItem("user");
-
-  // console.log(user , "user")
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -94,7 +88,6 @@ const Header = () => {
                 <li>
                   <Link href="/">
                     Home
-                    <i className="las la-angle-down" />
                   </Link>
                   {/* <ul>
                     <li>
@@ -109,9 +102,8 @@ const Header = () => {
                   <Link href="about">About</Link>
                 </li> */}
                 <li>
-                  <Link href="gallery">
+                  <Link href="blog-grid">
                     Galeria de Productos
-                    <i className="las la-angle-down" />
                   </Link>
                   {/* <ul>
                     <li>
@@ -148,7 +140,7 @@ const Header = () => {
                     </li>
                   </ul>
                 </li> */}
-                <li>
+                {/* <li>
                   <a href="#">
                     Blog
                     <i className="las la-angle-down" />
@@ -164,7 +156,7 @@ const Header = () => {
                       <Link href="blog-single">Blog Single</Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li>
                   <Link href="tienda">Tienda</Link>
                 </li>

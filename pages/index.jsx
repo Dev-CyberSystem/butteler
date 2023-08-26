@@ -159,12 +159,12 @@ const Index = () => {
                   data-animate="active"
                 >
                   <div className="image kf-image-hover">
-                    <a href="images/cafe1.jpeg" className="has-popup-image">
-                      <img src="images/cafe1.jpeg" alt="image" />
+                    <a href="images/brazilMoka.png" className="has-popup-image">
+                      <img src="images/brazilMoka.png" alt="image" />
                     </a>
                   </div>
                   <div className="desc">
-                    <h5 className="name">Café de altura</h5>
+                    <h5 className="name">Brazil Moka</h5>
                     <div className="subname">500g, 100% orgánico</div>
                     <div className="price">$3500</div>
                   </div>
@@ -176,12 +176,12 @@ const Index = () => {
                   data-animate="active"
                 >
                   <div className="image kf-image-hover">
-                    <a href="images/cafe2.jpeg" className="has-popup-image">
-                      <img src="images/cafe2.jpeg" alt="image" />
+                    <a href="images/blendGoat.png" className="has-popup-image">
+                      <img src="images/blendGoat.png" alt="image" />
                     </a>
                   </div>
                   <div className="desc">
-                    <h5 className="name">Gourmet</h5>
+                    <h5 className="name">Blend Goat</h5>
                     <div className="subname">500g, 100% orgánico</div>
                     <div className="price">$4500</div>
                   </div>
@@ -193,12 +193,12 @@ const Index = () => {
                   data-animate="active"
                 >
                   <div className="image kf-image-hover">
-                    <a href="images/menu3.jpg" className="has-popup-image">
-                      <img src="images/menu3.jpg" alt="image" />
+                    <a href="images/ilado.png" className="has-popup-image">
+                      <img src="images/ilado.png" alt="image" />
                     </a>
                   </div>
                   <div className="desc">
-                    <h5 className="name">Barista Pouring Syrup</h5>
+                    <h5 className="name">Brazil Ilado</h5>
                     <div className="subname">
                       2/3 espresso, 1/3 streamed milk
                     </div>
@@ -212,12 +212,12 @@ const Index = () => {
                   data-animate="active"
                 >
                   <div className="image kf-image-hover">
-                    <a href="images/menu4.jpg" className="has-popup-image">
-                      <img src="images/menu4.jpg" alt="image" />
+                    <a href="images/pedraAzul.png" className="has-popup-image">
+                      <img src="images/pedraAzul.png" alt="image" />
                     </a>
                   </div>
                   <div className="desc">
-                    <h5 className="name">Cold - Coffee</h5>
+                    <h5 className="name">Brazil Pedra Azul</h5>
                     <div className="subname">
                       2/3 espresso, 1/3 streamed milk
                     </div>
@@ -231,12 +231,12 @@ const Index = () => {
                   data-animate="active"
                 >
                   <div className="image kf-image-hover">
-                    <a href="images/menu5.jpg" className="has-popup-image">
-                      <img src="images/menu5.jpg" alt="image" />
+                    <a href="images/santosCerrado.png" className="has-popup-image">
+                      <img src="images/santosCerrado.png" alt="image" />
                     </a>
                   </div>
                   <div className="desc">
-                    <h5 className="name">Cappuccino Arabica</h5>
+                    <h5 className="name">Brazil Santos Cerrado</h5>
                     <div className="subname">
                       2/3 espresso, 1/3 streamed milk
                     </div>
@@ -250,12 +250,12 @@ const Index = () => {
                   data-animate="active"
                 >
                   <div className="image kf-image-hover">
-                    <a href="images/menu6.jpg" className="has-popup-image">
-                      <img src="images/menu6.jpg" alt="image" />
+                    <a href="images/timanaHuila.png" className="has-popup-image">
+                      <img src="images/timanaHuila.png" alt="image" />
                     </a>
                   </div>
                   <div className="desc">
-                    <h5 className="name">Milk Cream Coffee</h5>
+                    <h5 className="name">Timaná Huila</h5>
                     <div className="subname">
                       2/3 espresso, 1/3 streamed milk
                     </div>
@@ -366,7 +366,7 @@ const Index = () => {
         </div>
       </section>
       {/* Section Grid Carousel */}
-      <section className="section kf-grid-carousel">
+      {/* <section className="section kf-grid-carousel">
         <div className="container">
           <Swiper {...sliderProps.kfGridCarousel} className="swiper-container">
             <SwiperSlide className="swiper-slide">
@@ -458,7 +458,7 @@ const Index = () => {
                   <h5 className="name">Latte</h5>
                 </div>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
             {/* <SwiperSlide className="swiper-slide">
               <div
                 className="slide-item element-anim-1 scroll-animate"
@@ -519,9 +519,9 @@ const Index = () => {
                 </div>
               </div>
             </SwiperSlide> */}
-          </Swiper>
+          {/* </Swiper>
         </div>
-      </section>
+      </section> */}
       {/* Section Testimonials Carousel */}
       {/* <TestimonialsCarousel /> */}
       {/* Section Numbers */}
@@ -559,7 +559,7 @@ const Index = () => {
         </div>
       </section> */}
       {/* Section Latest Blog */}
-      <section className="section kf-latest-blog section-bg">
+      {/* <section className="section kf-latest-blog section-bg">
         <div className="container">
           <div className="kf-titles align-center">
             <div
@@ -663,11 +663,11 @@ const Index = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Section CTA */}
       <section
         className="section kf-cta kf-parallax"
-        style={{ backgroundImage: "url(images/cta_bg.jpg)" }}
+        style={{ backgroundImage: "url(images/2.png)" }}
       >
         <div className="container">
           <div className="row">

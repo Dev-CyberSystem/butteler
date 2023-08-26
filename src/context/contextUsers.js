@@ -10,6 +10,7 @@ export const UsuariosContext = createContext(); //universo. Todo lo que este aqu
 const ContextUsers = ({ children }) => {
   const [usuarios, setUsuarios] = useState([]);
   const [userLogueado, setUserLogueado] = useState(null); //para que no se borre el usuario logueado cuando se recarga la pagina
+  const router = useRouter();
 
   const getUsuarios = async () => {
     try {
@@ -22,7 +23,6 @@ const ContextUsers = ({ children }) => {
     }
   };
 
-  const router = useRouter();
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -37,12 +37,6 @@ const ContextUsers = ({ children }) => {
         };
         
         setUserLogueado(usuario);
-        
-        if (usuario.rol === "admin") {
-          router.push("/administracion");
-        } else {
-          router.push("/");
-        }
       } catch (error) {
         // El token no es válido, el usuario debe iniciar sesión
       }
@@ -80,7 +74,6 @@ const ContextUsers = ({ children }) => {
   };
 
   const updateUsuarios = async (updateUsuario) => {
-    console.log(updateUsuario, "usuario de context");
     try {
       await axios.put(
         `http://localhost:8080/api/user/usuarios/${updateUsuario._id}`,

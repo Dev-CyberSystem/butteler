@@ -12,7 +12,6 @@ const ProductsContext = ({ children }) => {
   const getProducts = async () => {
     try {
       const response = await axios.get("http://localhost:8080/api/productos");
-      console.log(response.data, "response productos")
       setProductos(response.data);
     } catch (error) {
       console.log(error, "error de productos");
@@ -36,7 +35,6 @@ const ProductsContext = ({ children }) => {
   //Petición a la API Http PUT  ----> Actualiza info
 
   const updateProducts = async (producto) => {
-    console.log(producto, "producto de context");
     try {
       await axios.put(
         `http://localhost:8080/api/productos/actualizar/${producto._id}`,
@@ -55,7 +53,6 @@ const ProductsContext = ({ children }) => {
       const response = await axios.delete(
         `http://localhost:8080/api/productos/eliminar/${_id}`
       );
-      console.log(response);
       getProducts();
     } catch (error) {
       console.log(error);

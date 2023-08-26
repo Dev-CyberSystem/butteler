@@ -12,7 +12,6 @@ const TableProductos = () => {
   const handleClose = () => setShow(false);
 
   const handleDelete = (_id) => {
-    console.log(_id);
     deleteProducts(_id);
   };
 
