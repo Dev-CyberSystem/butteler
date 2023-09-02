@@ -51,28 +51,64 @@ const Blog4 = () => {
                 <p>
                   <br />
                 </p>
-                <h3>Aliquam vel sem vel vellesuada</h3>
+                <h3>¿Cómo preparar el café perfecto?</h3>
                 <p>
-                  <img src="images/latest_blog1.jpg" alt="image" />
+                  <img src="images/cafe.jpg" alt="image" />
                 </p>
+                <h4>
+                  ¿Cuál es el secreto para hacer el café perfecto? En este
+                  artículo te contamos los factores determinantes para elaborar
+                  el mejor café.
+                </h4>
                 <p>
-                  Vivamus interdum suscipit lacus. Nunc ultrices accumsan
-                  mattis. Aliquam vel sem vel velit efficitur malesuada. Donec
-                  arcu lacus, ornare eget ligula vel, commodo luctus felis. Ut
-                  dignissim sapien sit amet molestie rutrum. Orci varius natoque
-                  penatibus et magnis dis parturient montes, nascetur ridiculus
-                  mus. Pellentesque in porta dolor, a suscipit risus. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Cras ac
-                  arcu in lorem rhoncus ullamcorper. Ut at nulla ut libero
-                  mollis viverra sed vitae purus.
+                  El café es una infusión declarada patrimonio cultural
+                  inmaterial por la UNESCO. En Argentina, según la Cámara de
+                  Café, se consume 1 kg de café por habitante al año. Esta
+                  bebida tiene la capacidad de ofrecer sabores y aromas muy
+                  complejos que la posicionan más allá de una simple infusión
+                  estimulante. La matriz de sabores y aromas característicos del
+                  café surge de ser un producto cuidado a lo largo de toda la
+                  cadena de producción, existiendo diversos factores que
+                  influyen sobre la misma. Por lo expuesto, preparar el café
+                  perfecto no depende exclusivamente de tener una buena
+                  cafetera, sino que los parámetros determinantes de la calidad
+                  del café se remontan a las características de la materia prima
                 </p>
 
                 <p>
-                  Nam dui mauris, congue vel nisi in, tempus gravida enim. Nulla
-                  et tristique orci. Pellentesque lectus sapien, maximus id
-                  gravida sit amet, tristique non eros. Etiam aliquet, sem vitae
-                  sagittis convallis, ante sapien tincidunt nisl, eget dapibus
-                  tortor velit quis ex.
+                  ¿Qué tener en cuenta para preparar el café perfecto?
+                  <br /> CALIDAD DEL GRANO DE CAFÉ: El cultivo sostenible del
+                  grano de café se destaca por su excelencia frente a otros
+                  tipos de cultivos (Factores como la planta de café, el
+                  terruño, las características del grano y el tiempo de
+                  tostación influyen en la calidad del mismo). <br />
+                  MOLIENDA: El café posee compuestos que se oxidan rápidamente
+                  en contacto con el oxígeno. Moler el café justo antes de
+                  prepararlo mantiene intacto estos compuestos optimizando la
+                  calidad de la infusión. La molienda debe ser realizada en
+                  pequeñas cantidades ya que, una vez molido pierde su aroma. La
+                  variable molienda afecta el resultado final. No debe ser ni
+                  muy fino (no permitiría el paso del agua a través de él), ni
+                  muy grueso (pasaría rápidamente y no se impregnaría del aroma,
+                  sabor y color). <br />
+                  ALMACENAMIENTO ADECUADO DEL CAFÉ: Los granos que no se usen de
+                  inmediato deben mantenerse en un recipiente hermético y lejos
+                  de la luz solar. <br /> PROPORCIÓN CORRECTA DE CAFÉ Y AGUA
+                  POTABLE: Dos aspectos claves son la dosis de café utilizada,
+                  así como también la temperatura del agua. La cantidad de café
+                  por dosis está entre los 5 y los 7 gramos. La temperatura del
+                  agua debe estar entre los 94 y 96º C, no tiene que hervir.{" "}
+                  <br />
+                  TÉCNICA: La precisión es importante al momento de preparar un
+                  excelente café. Cada método de preparación tiene su propia
+                  técnica, pero al hacer lo mismo una y otra vez, se corrigen
+                  errores y se mejora gradualmente. <br />
+                  USO DE EQUIPOS DE CALIDAD: Se obtendrán mejores resultados con
+                  herramientas de alta calidad. Es una inversión inicial, pero
+                  en el largo plazo vale la pena. Es fundamental la correcta
+                  higiene y el mantenimiento de la máquina utilizada, los cuales
+                  deben estar garantizados desde el inicio del proceso de
+                  elaboración.
                 </p>
               </div>
               {/* <div

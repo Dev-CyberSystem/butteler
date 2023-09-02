@@ -59,28 +59,61 @@ const BlogSingle = () => {
                 <p>
                   <br />
                 </p>
-                <h3>Aliquam vel sem vel vellesuada</h3>
+                <h3>¿CÓMO HACER UN EXQUISITO CAFÉ CON CREMA?</h3>
                 <p>
                   <img src="images/latest_blog1.jpg" alt="image" />
                 </p>
                 <p>
-                  Vivamus interdum suscipit lacus. Nunc ultrices accumsan
-                  mattis. Aliquam vel sem vel velit efficitur malesuada. Donec
-                  arcu lacus, ornare eget ligula vel, commodo luctus felis. Ut
-                  dignissim sapien sit amet molestie rutrum. Orci varius natoque
-                  penatibus et magnis dis parturient montes, nascetur ridiculus
-                  mus. Pellentesque in porta dolor, a suscipit risus. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Cras ac
-                  arcu in lorem rhoncus ullamcorper. Ut at nulla ut libero
-                  mollis viverra sed vitae purus.
+                  Si sos fanático del café y te gusta combinar sabores fuertes y
+                  suaves a la vez este artículo está hecho para vos. Hoy te voy
+                  a compartir el paso a paso para elaborar un exquisito café con
+                  crema. <br /> Seguro estarás pensando ¿qué tan complejo
+                  resulta elaborar un café con crema? y la respuesta es muy
+                  sencilla, ninguna, pero la finalidad del artículo es repasar
+                  algunas recomendaciones que te van a ser muy útiles al momento
+                  de preparar la infusión. <br /> Para comenzar, te voy a
+                  compartir información nutricional de la preparación: <br />
+                  El café con crema no es una infusión que te recomendaría beber
+                  libremente. La crema es un alimento de origen animal no
+                  lácteo, compuesto por grasas saturadas. <br />
+                  No obstante, podría ser una muy buena idea para preparar en
+                  alguna ocasión especial donde querés darle ese toque
+                  distintivo al café. La forma de elaboración es muy sencilla:{" "}
+                  <br /> Preparar el café de tu preferencia y una vez listo
+                  agregar por encima 1 cucharada sopera de crema previamente
+                  batida. <br /> A la crema podés batirla con 1 cucharadita de
+                  azúcar (si preferís una preparación más dulce) o agregarle
+                  esencia de vainilla. También, una vez servido podés
+                  espolvorear con cacao, chocolate amargo rallado o canela.{" "}
+                  <br /> Qué pasa si…“No consumo crema por razones
+                  nutricionales, éticas, sociales o de la índole que sea ¿
+                  existe alguna variante que lo reemplace?”. Quizá no sea
+                  posible un reemplazo con las características organolépticas de
+                  la crema de leche pero a continuación te comparto una crema de
+                  origen vegetal muy deliciosa y nutritiva.
                 </p>
 
                 <p>
-                  Nam dui mauris, congue vel nisi in, tempus gravida enim. Nulla
-                  et tristique orci. Pellentesque lectus sapien, maximus id
-                  gravida sit amet, tristique non eros. Etiam aliquet, sem vitae
-                  sagittis convallis, ante sapien tincidunt nisl, eget dapibus
-                  tortor velit quis ex.
+                  Crema vegetal a base de castañas de cajú <br />
+                  INGREDIENTES
+                  <br />
+                  <li>2 tazas de bebida vegetal</li>
+                  <li>½ taza de dátiles</li>
+                  TIEMPO DE PREPARACIÓN
+                  <li>10 min.</li>
+                  PREPARACIÓN
+                  <li>
+                    Verter ambos ingredientes en la licuadora y licuar hasta
+                    obtener una mezcla homogénea.
+                  </li>
+                  <li>
+                    Pasar por un paño de microfibra para quitar los restos de
+                    fruta.
+                  </li>
+                  <li>
+                    Una vez listo, añadir al café ya elaborado, 1 cucharada
+                    sopera de la crema vegetal.
+                  </li>
                 </p>
               </div>
               {/* <div

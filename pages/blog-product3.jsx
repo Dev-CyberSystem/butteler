@@ -62,28 +62,65 @@ const Blog3 = () => {
                 <p>
                   <br />
                 </p>
-                <h3>Aliquam vel sem vel vellesuada</h3>
+                <h3>Temperatura ideal para tu cafe</h3>
                 <p>
-                  <img src="images/latest_blog1.jpg" alt="image" />
+                  <img src="images/temperatura.jpg" alt="image" />
                 </p>
+                <h4>
+                  La temperatura del agua es tan importante como la calidad de
+                  la misma, para poder obtener en taza el café deseado.
+                </h4>
                 <p>
-                  Vivamus interdum suscipit lacus. Nunc ultrices accumsan
-                  mattis. Aliquam vel sem vel velit efficitur malesuada. Donec
-                  arcu lacus, ornare eget ligula vel, commodo luctus felis. Ut
-                  dignissim sapien sit amet molestie rutrum. Orci varius natoque
-                  penatibus et magnis dis parturient montes, nascetur ridiculus
-                  mus. Pellentesque in porta dolor, a suscipit risus. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Cras ac
-                  arcu in lorem rhoncus ullamcorper. Ut at nulla ut libero
-                  mollis viverra sed vitae purus.
+                  ¿Cuál es la temperatura ideal para un café? Para tener el café
+                  deseado, necesitamos obtener la temperatura justa de esa
+                  preparación. En la mayoría de las extracciones utilizadas, ya
+                  sea espresso, o filtro o prensa francesa, etc., se elige una
+                  temperatura de 92°/93°C, nunca superar los 95°C. A estas
+                  temperaturas podemos obtener los aromas y sabores que queremos
+                  extraer de ese café tostado, si nos pasamos de esos límites
+                  podemos malograr el café agregándole amargor o hasta gusto a
+                  quemado o ceniza
                 </p>
 
                 <p>
-                  Nam dui mauris, congue vel nisi in, tempus gravida enim. Nulla
-                  et tristique orci. Pellentesque lectus sapien, maximus id
-                  gravida sit amet, tristique non eros. Etiam aliquet, sem vitae
-                  sagittis convallis, ante sapien tincidunt nisl, eget dapibus
-                  tortor velit quis ex.
+                  ¿Qué pasa si superamos la temperatura ideal? Como siempre digo
+                  en la preparación del café, interviene la química, pero en
+                  este caso le sumamos la física. Como todos sabemos el agua
+                  hierve a 100ºC pero esto no es verdad, salvo que estemos a
+                  nivel del mar, tanto a 500 mt de altura como a 2000 mt o más
+                  el agua hierve mucho antes de alcanzar los 100 °C. Por ejemplo
+                  a 500 mt el agua herviría a 98°C, a 2000 mt 93°C y a 4000 mt
+                  86°C. Estas variables de altura y temperatura deben tenerse en
+                  cuenta para obtener el café que deseamos. Pero debemos estar
+                  atentos a otros parámetros que también influyen en la altura,
+                  como la presencia de oxígeno en el aire, la temperatura
+                  ambiente, la humedad, etc. Entonces si no estamos atentos a
+                  estas variables, podemos superar la temperatura ideal y
+                  obtener un café con sabores desagradables.
+                </p>
+                <p>
+                  ¿ La temperatura debe ser siempre la misma? Para lograr una
+                  buena taza de café debemos lograr una temperatura constante en
+                  la extracción. Siempre tenemos que estar atentos a todas las
+                  variables porque la más mínima distracción puede arruinar
+                  todos los cuidados previos. Por ejemplo: Si un barista, en una
+                  máquina de gastronomía está atento a todos los detalles
+                  previos y en el momento de colocar el filtro en el grupo para
+                  empezar la erogación del café, se olvida de apretar el botón
+                  para iniciarla por buscar una taza que todavía no tenia a
+                  mano, estaría quemando el café por la temperatura de los
+                  metales e influyendo en el resultado de la taza.
+                </p>
+                <p>
+                  ¿ Y si usamos una temperatura más baja? En el caso del
+                  espresso, es imposible. Tenemos que estar atentos a las
+                  variables descritas más arriba. Ahora, en otros tipos de
+                  extracciones como el café filtrado, ya sea por el sistema
+                  conocido del filtro de papel o algún otro sistema similar,
+                  podemos utilizar temperaturas más bajas, inferiores a 90ºC. Lo
+                  que va a suceder es que con menor temperatura, los tiempos de
+                  extracción son más largos y esto nos otorga un café más
+                  aromático y con mayor acidez que de la manera tradicional.
                 </p>
               </div>
             </div>

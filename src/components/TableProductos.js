@@ -11,8 +11,8 @@ const TableProductos = () => {
 
   const handleClose = () => setShow(false);
 
-  const handleDelete = (_id) => {
-    deleteProducts(_id);
+  const handleDelete = (_id, producto) => {
+    deleteProducts(_id, producto);
   };
 
   const handleEdit = (producto) => {
@@ -58,7 +58,7 @@ const TableProductos = () => {
                     <Button
                       variant="danger"
                       className="m-1"
-                      onClick={() => handleDelete(producto._id)}
+                      onClick={() => handleDelete(producto._id, producto)}
                     >
                       Eliminar
                     </Button>

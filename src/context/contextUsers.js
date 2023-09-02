@@ -1,8 +1,8 @@
 import { createContext, useEffect, useState } from "react";
 import jwt_decode from "jwt-decode";
 import axios from "axios";
-import { useRouter } from 'next/router';
-
+import { useRouter } from "next/router";
+import Swal from "sweetalert2";
 
 export const UsuariosContext = createContext(); //universo. Todo lo que este aqui adentro va a tener acceso a los usuarios
 
@@ -23,7 +23,6 @@ const ContextUsers = ({ children }) => {
     }
   };
 
-
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
@@ -35,7 +34,7 @@ const ContextUsers = ({ children }) => {
           email: decode.email,
           rol: decode.rol,
         };
-        
+
         setUserLogueado(usuario);
       } catch (error) {
         // El token no es válido, el usuario debe iniciar sesión
@@ -45,10 +44,13 @@ const ContextUsers = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      const response = await axios.post("http://localhost:8080/api/user/login", {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "http://localhost:8080/api/user/login",
+        {
+          email,
+          password,
+        }
+      );
 
       const jwtToken = response.data.data.token;
       localStorage.setItem("token", jwtToken);
@@ -61,6 +63,13 @@ const ContextUsers = ({ children }) => {
         rol: decode.rol,
       };
 
+      Swal.fire({
+        icon: "success",
+        title: "Bienvenido!",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+
       setUserLogueado(usuario);
 
       if (usuario.rol === "admin") {
@@ -69,7 +78,12 @@ const ContextUsers = ({ children }) => {
         router.push("/");
       }
     } catch (error) {
-      // Manejar el error en caso de fallo en el inicio de sesión
+      console.log(error);
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Email o contraseña incorrectos",
+      });
     }
   };
 
@@ -98,10 +112,27 @@ const ContextUsers = ({ children }) => {
   };
 
   const logout = () => {
-    localStorage.removeItem("user");
-    localStorage.removeItem("token");
-    setUserLogueado(null); // Asegura que el estado refleje la ausencia de usuario logueado
-    router.push("/"); // Utiliza el enrutamiento de Next.js en lugar de window.location.href
+    Swal.fire({
+      icon: "warning",
+      title: "Estas seguro?",
+      text: "Vas a cerrar sesion",
+      showCancelButton: true,
+      confirmButtonText: "Si, cerrar sesion",
+      cancelButtonText: "No, cancelar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+      localStorage.removeItem("user");
+      localStorage.removeItem("token");
+      setUserLogueado(null); // Asegura que el estado refleje la ausencia de usuario logueado
+      router.push("/"); // Utiliza el enrutamiento de Next.js en lugar de window.location.href
+      } else if (result.dismiss === Swal.DismissReason.cancel) {
+        Swal.fire({
+          icon: "error",
+          title: "Cancelado",
+          text: "Tu sesion sigue activa",
+        });
+      }
+    });
   };
 
   useEffect(() => {

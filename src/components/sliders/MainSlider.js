@@ -19,7 +19,7 @@ const MainSlider = () => {
                   Sin Azucar
                 </h2>
                 <div className="kf-bts">
-                  <Link href="gallery" className="kf-btn">
+                  <Link href="blog-grid" className="kf-btn">
                     <span>Ver Productos</span>
                     <i className="fas fa-chevron-right" />
                   </Link>
@@ -43,16 +43,11 @@ const MainSlider = () => {
                 <div className="subtitles">Bienvenidos a Butteler</div>
                 <h2 className="name text-anim-1" data-splitting="chars">
                   Café Torrado
-                  <br />
-                  y Molido
+                  <br />y Molido
                 </h2>
                 <div className="kf-bts">
-                  <Link href="gallery" className="kf-btn">
+                  <Link href="blog-grid" className="kf-btn">
                     <span>Ver Productos</span>
-                    <i className="fas fa-chevron-right" />
-                  </Link>
-                  <Link href="reservation" className="kf-btn dark-btn">
-                    <span>get delivery</span>
                     <i className="fas fa-chevron-right" />
                   </Link>
                 </div>
@@ -74,12 +69,8 @@ const MainSlider = () => {
                   en Polvo
                 </h2>
                 <div className="kf-bts">
-                  <Link href="gallery" className="kf-btn">
+                  <Link href="blog-grid" className="kf-btn">
                     <span>Ver Productos</span>
-                    <i className="fas fa-chevron-right" />
-                  </Link>
-                  <Link href="reservation" className="kf-btn dark-btn">
-                    <span>get delivery</span>
                     <i className="fas fa-chevron-right" />
                   </Link>
                 </div>

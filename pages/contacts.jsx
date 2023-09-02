@@ -36,60 +36,87 @@ const Contacts = () => {
                   <i className="las la-map-marked-alt" />
                 </div>
                 <div className="desc">
-                  <h5 className="name">Main Location</h5>
+                  <h5 className="name">Zona Norte Tucumán</h5>
                   <ul>
                     <li>
-                      55 Main Street, 2nd Block, <br />
-                      3rd Floor, New York
-                    </li>
-                    <li>
-                      394 Main Street, 2nd Block, <br />
-                      3rd Floor, USA
+                      Marcos Paz 336 <br />
+                      San Miguel de Tucumán
                     </li>
                   </ul>
                 </div>
-              </div>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-center">
-              <div
-                className="kf-contacts-item element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <div className="image">
-                  {/*<img src="images/contact_icon2.png" alt="" />*/}
-                  <i className="las la-envelope-open-text" />
-                </div>
-                <div className="desc">
-                  <h5 className="name">Email Address</h5>
-                  <ul>
-                    <li>
-                      supportkaffen@gmail.com <br />
-                      www.kaffeninfo.net
-                    </li>
-                    <li>
-                      supportkaffen@gmail.com <br />
-                      www.kaffeninfo.net
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-center">
-              <div
-                className="kf-contacts-item element-anim-1 scroll-animate"
-                data-animate="active"
-              >
                 <div className="image">
                   {/*<img src="images/contact_icon3.png" alt="" />*/}
                   <i className="las la-headset" />
                 </div>
                 <div className="desc">
-                  <h5 className="name">Phone Number</h5>
+                  <h5 className="name">Telefono</h5>
                   <ul>
                     <li>
                       +012 (345) 678 99 <br />
                       123456780
                     </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-center">
+              <div
+                className="kf-contacts-item element-anim-1 scroll-animate"
+                data-animate="active"
+              >
+                <div className="image">
+                  {/*<img src="images/contact_icon1.png" alt="" />*/}
+                  <i className="las la-map-marked-alt" />
+                </div>
+                <div className="desc">
+                  <h5 className="name">Zona Oeste</h5>
+                  <ul>
+                    <li>
+                      San Martin 4694 <br />
+                      San Miguel de Tucumán
+                    </li>
+                  </ul>
+                </div>
+                <div className="image">
+                  {/*<img src="images/contact_icon3.png" alt="" />*/}
+                  <i className="las la-headset" />
+                </div>
+                <div className="desc">
+                  <h5 className="name">Telefono</h5>
+                  <ul>
+                    <li>
+                      +012 (345) 678 99 <br />
+                      123456780
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-center">
+              <div
+                className="kf-contacts-item element-anim-1 scroll-animate"
+                data-animate="active"
+              >
+                <div className="image">
+                  {/*<img src="images/contact_icon1.png" alt="" />*/}
+                  <i className="las la-map-marked-alt" />
+                </div>
+                <div className="desc">
+                  <h5 className="name">Zona Sur</h5>
+                  <ul>
+                    <li>
+                      Crisostomo Alvarez <br />
+                      San Miguel de Tucumán
+                    </li>
+                  </ul>
+                </div>
+                <div className="image">
+                  {/*<img src="images/contact_icon3.png" alt="" />*/}
+                  <i className="las la-headset" />
+                </div>
+                <div className="desc">
+                  <h5 className="name">Telefono</h5>
+                  <ul>
                     <li>
                       +012 (345) 678 99 <br />
                       123456780
@@ -109,14 +136,14 @@ const Contacts = () => {
             data-animate="active"
           >
             <div className="kf-titles align-center">
-              <div className="kf-subtitle">Contact Us</div>
-              <h3 className="kf-title">Send Us Message</h3>
+              <div className="kf-subtitle">Contacto</div>
+              <h3 className="kf-title">Envianos tu consulta</h3>
             </div>
             <form id="cform" method="post">
               <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
                   <div className="kf-field">
-                    <input type="text" name="name" placeholder="Full Name" />
+                    <input type="text" name="name" placeholder="Nombre" />
                     <i className="far fa-user" />
                   </div>
                 </div>
@@ -125,27 +152,27 @@ const Contacts = () => {
                     <input
                       type="email"
                       name="email"
-                      placeholder="Email Address"
+                      placeholder="Email"
                     />
                     <i className="fas fa-at" />
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
                   <div className="kf-field">
-                    <input type="tel" name="tel" placeholder="Phone Number" />
+                    <input type="tel" name="tel" placeholder="Telefono" />
                     <i className="fas fa-mobile-alt" />
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                   <div className="kf-field">
-                    <input type="text" name="subject" placeholder="Subject" />
+                    <input type="text" name="subject" placeholder="Titulo" />
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                   <div className="kf-field">
                     <textarea
                       name="message"
-                      placeholder="Message"
+                      placeholder="Mensaje"
                       defaultValue={""}
                     />
                   </div>
@@ -157,7 +184,7 @@ const Contacts = () => {
                       className="kf-btn"
                       onclick="$('#cform').submit(); return false;"
                     >
-                      <span>Send us message</span>
+                      <span>Enviar Mensaje</span>
                       <i className="fas fa-chevron-right" />
                     </a>
                   </div>
@@ -165,15 +192,15 @@ const Contacts = () => {
               </div>
             </form>
             <div className="alert-success" style={{ display: "none" }}>
-              <p>Thanks, your message is sent successfully.</p>
+              <p>Gracias, su mensaje fue enviado.</p>
             </div>
           </div>
         </div>
       </section>
       {/* Section Insta Carousel */}
-      <InstaCarousel />
+      {/* <InstaCarousel /> */}
       {/* Section Brands */}
-      <div className="section kf-brands">
+      {/* <div className="section kf-brands">
         <div className="container">
           <div className="kf-brands-items row">
             <div className="col-xs-12 col-sm-12 col-md-4 col-lg-2">
@@ -238,7 +265,7 @@ const Contacts = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Layouts>
   );
 };
